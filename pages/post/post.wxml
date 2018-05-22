@@ -1,0 +1,40 @@
+<!--pages/post/post.wxml-->
+<swiper indicator-dots='true' autoplay='true' interval='3000'>
+  <swiper-item>
+    <image src='/images/bl.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='/images/vr.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='/images/xiaolong.jpg'></image>
+  </swiper-item>
+</swiper>
+
+
+<block wx:for="{{posts_key}}">
+<view class='post-container'>
+  <view class='post_img_tittle'>
+    <image src="{{item.avatar}}" class='post-img'></image>
+    <text>{{item.date}}</text>
+
+    <text class='post_tittle'>{{item.title}}</text>
+  </view>
+
+
+  <image class='post-big-picture' src="{{item.imgSrc}}"></image>
+  <text class='post_content'>{{item.content}}</text>
+
+
+  <view class='post-collection_like'>
+    <image src='/images/icon/chat.png' class='post-like-img'></image>
+    <text class='post-like-text'>{{item.collection}}</text>
+    <image src='/images/icon/view.png' class='post-collection'></image>
+    <text class='post-collection-text'>{{item.reading}}</text>
+  </view>
+
+
+</view>
+</block>
+
+
