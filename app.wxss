@@ -1,1 +1,5 @@
 /**app.wxss**/
+text{
+    font-size: 24rpx;
+    font-family: MicrroSoft Yahei;
+}

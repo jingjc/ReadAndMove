@@ -1,0 +1,22 @@
+ <template name="postitem">
+ <view class='post-container'>
+ <view class='post_img_tittle'>
+    <image src="{{avatar}}" class='post-img'></image>
+    <text>{{item.date}}</text>
+
+    <text class='post_tittle'>{{title}}</text>
+  </view>
+
+
+  <image class='post-big-picture' src="{{imgSrc}}"></image>
+  <text class='post_content'>{{content}}</text>
+
+
+  <view class='post-collection_like'>
+    <image src='/images/icon/chat.png' class='post-like-img'></image>
+    <text class='post-like-text'>{{collection}}</text>
+    <image src='/images/icon/view.png' class='post-collection'></image>
+    <text class='post-collection-text'>{{reading}}</text>
+  </view>
+    </view>
+   </template>
