@@ -20,9 +20,8 @@ Page({
 
   onclickitem:function(event){
     var postid=event.currentTarget.dataset.postid;
-    console.log(postid);
       wx.navigateTo({
-        url: 'post_details/post_details',
+        url: 'post_details/post_details?id='+postid,
       })
   },
   /**
@@ -73,4 +72,6 @@ Page({
   onShareAppMessage: function () {
   
   }
+
+
 })

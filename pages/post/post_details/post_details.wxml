@@ -1,23 +1,24 @@
 <!--pages/post/post_details.wxml-->
 <view class='post_details_details_container'>
-  <image src='/images/post/crab.png' class='post_details_details_pic'></image>
-
+  <image src='{{post_Data.headImgSrc}}' class='post_details_details_pic'></image>
+<image src='/images/music/music-start.png' class="audio"></image>
   <view class='post_details_details_author'>
-    <image src='/images/avatar/5.png' class='post_details_details_head_img'></image>
-    <text class='post_details_details_name'> jingjc</text>
-    <text class="post_details_details_time"> 发表于 24小时前</text>
+    <image src='{{post_Data.avatar}}' class='post_details_details_head_img'></image>
+    <text class='post_details_details_name'> {{post_Data.author}}</text>
+    <text class="post_details_details_time"> 发表于{{post_Data.dateTime}}</text>
   </view>
 
-  <text class='post_details_details_desc'> 又是霞飞卸妆说的那家快递空间</text>
+  <text class='post_details_details_desc'> {{post_Data.tittle}}</text>
 
   <view class='post_details_details_click_img'>
     <view class='post_details_details_circle_img'>
-      <image src='/images/icon/collection.png'></image>
+      <image wx:if="{{Collection}}"   catchtap='onCollectionTap'   src='/images/icon/collection.png'></image>
+       <image wx:else   catchtap='onCollectionTap'   src='/images/icon/collection-anti.png'></image>
       <image class='share_img'  src='/images/icon/share.png'></image>
     </view>
     <view class='share_line'></view>
   </view>
 
-  <text class='post_details_details_content'>又是霞飞卸妆说的那家快递空间又是霞飞卸妆说的那家快递空间又是霞飞卸妆说的那家快递空间</text>
+  <text class='post_details_details_content'>{{post_Data.detail}}</text>
 
 </view>

@@ -8,6 +8,7 @@
 .post_details_details_pic {
   width: 100%;
   height: 460rpx;
+
 }
 
 .post_details_details_author {
@@ -18,6 +19,7 @@
 
 .post_details_details_head_img {
   width: 60rpx;
+  
   height: 60rpx;
   vertical-align: middle;
 }
@@ -26,7 +28,7 @@
   white-space: nowrap;
   font-size: 30rpx;
   font-weight: 300;
-  margin-left: 20rpx;
+  
   color: #000;
   vertical-align: middle;
 }
@@ -83,3 +85,13 @@
   letter-spacing: 2px;
   margin: 30rpx;
 }
+
+.audio{
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  opacity: 0.8;
+  top: 180rpx;
+}            
