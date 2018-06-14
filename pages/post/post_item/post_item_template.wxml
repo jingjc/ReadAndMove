@@ -2,7 +2,7 @@
  <view class='post-container'>
  <view class='post_img_tittle'>
     <image src="{{avatar}}" class='post-img'></image>
-    <text>{{item.date}}</text>
+    <text>{{date}}</text>
 
     <text class='post_tittle'>{{title}}</text>
   </view>

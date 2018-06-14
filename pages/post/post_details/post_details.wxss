@@ -28,7 +28,6 @@
   white-space: nowrap;
   font-size: 30rpx;
   font-weight: 300;
-  
   color: #000;
   vertical-align: middle;
 }
